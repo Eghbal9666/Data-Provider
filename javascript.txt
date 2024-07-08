@@ -1,0 +1,17 @@
+JavascriptExecutor j = (JavascriptExecutor) driver;
+j.executeScript("arguments[0].click();", l);
+
+JavascriptExecutor j = (JavascriptExecutor)driver;
+j.executeScript("document.getElementById('displayed-text').style.display='block';");
+
+WebElement l = driver.findElement(By.className("gsc-input"));
+j.executeScript("document.getElementsByName('gsc-i-id1')[0].value= 'Java'");
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+String s = "https://www.tutorialspoint.com/about/about_careers.htm";
+String scrpt = "window.location = \'"+s+"\'";
+js.executeScript(scrpt);
+
+jse.executeScript("arguments[0].scrollIntoView({block: 'center'});",WebElement);
+
+
